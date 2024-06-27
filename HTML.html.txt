@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .question {
+            cursor: pointer;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .answer {
+            display: none;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #f9f9f9;
+            border-left: 4px solid #007BFF;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interview Questions</h1>
+    </header>
+    <div class="container">
+        <div class="section" id="hr-interview">
+            <h2>HR Interview Questions</h2>
+            <div class="qa-section">
+                <div class="question" onclick="toggleAnswer(this)">
+                    <strong>Q1:</strong> Tell me about yourself.
+                </div>
+                <div class="answer">
+                    <p>I am a software developer with over five years of experience in the tech industry. I specialize in web development and have a passion for creating user-friendly applications. In my previous role, I led a team of developers on several successful projects, which improved our company's workflow efficiency by 20%.</p>
+                </div>
+            </div>
+            <div class="qa-section">
+                <div class="question" onclick="toggleAnswer(this)">
+                    <strong>Q2:</strong> Why do you want to work here?
+                </div>
+                <div class="answer">
+                    <p>I have always admired your company's commitment to innovation and excellence. I am excited about the opportunity to contribute to such a forward-thinking team and to work on projects that make a real impact. Your company's values align with my own professional goals and personal values.</p>
+                </div>
+            </div>
+            <div class="qa-section">
+                <div class="question" onclick="toggleAnswer(this)">
+                    <strong>Q3:</strong> What are your strengths?
+                </div>
+                <div class="answer">
+                    <p>My strengths include strong problem-solving skills, attention to detail, and the ability to work effectively in a team. I am also highly adaptable and thrive in fast-paced environments. Additionally, my technical skills in web development and my experience with various programming languages make me a strong candidate for this position.</p>
+                </div>
+            </div>
+            <div class="qa-section">
+                <div class="question" onclick="toggleAnswer(this)">
+                    <strong>Q4:</strong> Describe a challenging situation and how you handled it.
+                </div>
+                <div class="answer">
+                    <p>In my previous role, I was tasked with leading a project with a tight deadline. Midway through the project, we encountered a critical bug that threatened to delay our timeline. I organized a team meeting to brainstorm solutions and delegated tasks based on each member's strengths. Through effective communication and teamwork, we resolved the issue and delivered the project on time.</p>
+                </div>
+            </div>
+            <div class="qa-section">
+                <div class="question" onclick="toggleAnswer(this)">
+                    <strong>Q5:</strong> Where do you see yourself in five years?
+                </div>
+                <div class="answer">
+                    <p>In five years, I see myself in a leadership role within the company, helping to drive innovative projects and mentor junior developers. I aim to continue growing my technical skills and contributing to the success of the team and the company as a whole.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="technical-interview">
+            <h2>Technical Interview Questions</h2>
+            <div class="qa-section">
+                <div class="question" onclick="toggleAnswer(this)">
+                    <strong>Q1:</strong> What is your experience with JavaScript frameworks?
+                </div>
+                <div class="answer">
+                    <p>I have extensive experience with several JavaScript frameworks including React, Angular, and Vue.js. In my previous projects, I have used React to build dynamic single-page applications, Angular for large-scale enterprise applications, and Vue.js for its simplicity and ease of integration.</p>
+                </div>
+            </div>
+            <div class="qa-section">
+                <div class="question" onclick="toggleAnswer(this)">
+                    <strong>Q2:</strong> Can you explain the concept of closures in JavaScript?
+                </div>
+                <div class="answer">
+                    <p>A closure in JavaScript is a function that retains access to its lexical scope, even when the function is executed outside that scope. Closures are commonly used for data privacy and to create function factories. For example, a closure can be used to create a counter function that has its own private variable.</p>
+                </div>
+            </div>
+            <div class="qa-section">
+                <div class="question" onclick="toggleAnswer(this)">
+                    <strong>Q3:</strong> How do you handle version control in your projects?
+                </div>
+                <div class="answer">
+                    <p>I use Git for version control in my projects. I follow a branching strategy, typically using feature branches for new features, bugfix branches for fixes, and a main branch for production-ready code. I also make use of pull requests to review code changes before merging them into the main branch.</p>
+                </div>
+            </div>
+            <div class="qa-section">
+                <div class="question" onclick="toggleAnswer(this)">
+                    <strong>Q4:</strong> What is the difference between SQL and NoSQL databases?
+                </div>
+                <div class="answer">
+                    <p>SQL databases are relational databases that use structured query language (SQL) for defining and manipulating data. They are table-based and are best for complex queries and transactions. NoSQL databases, on the other hand, are non-relational and can be document-based, key-value pairs, wide-column stores, or graph databases. They are more flexible and can handle unstructured data, making them ideal for big data and real-time web applications.</p>
+                </div>
+            </div>
+            <div class="qa-section">
+                <div class="question" onclick="toggleAnswer(this)">
+                    <strong>Q5:</strong> Explain the concept of RESTful APIs.
+                </div>
+                <div class="answer">
+                    <p>RESTful APIs are web services based on Representational State Transfer (REST) architecture. They use HTTP requests to perform CRUD (Create, Read, Update, Delete) operations on resources. RESTful APIs are stateless, meaning each request from a client contains all the information needed to process the request. They typically use JSON or XML for data interchange and follow standard HTTP methods like GET, POST, PUT, DELETE, and PATCH.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleAnswer(element) {
+            var answer = element.nextElementSibling;
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
